@@ -1,5 +1,7 @@
 import os
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.neural_network import MLPClassifier
@@ -24,7 +26,7 @@ def plot_loss_curves(models: list, names: list, save: bool = True):
     if save:
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         plt.savefig(f"{OUTPUT_DIR}/loss_curves.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
 
 
 def plot_confusion_matrices(results: list, save: bool = True):
@@ -48,7 +50,7 @@ def plot_confusion_matrices(results: list, save: bool = True):
     if save:
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         plt.savefig(f"{OUTPUT_DIR}/confusion_matrices.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
 
 
 def plot_metrics_comparison(summary_df, save: bool = True):
@@ -69,7 +71,7 @@ def plot_metrics_comparison(summary_df, save: bool = True):
     if save:
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         plt.savefig(f"{OUTPUT_DIR}/metrics_comparison.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
 
 
 def plot_class_balance(y_before, y_after, save: bool = True):
@@ -87,4 +89,4 @@ def plot_class_balance(y_before, y_after, save: bool = True):
     if save:
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         plt.savefig(f"{OUTPUT_DIR}/class_balance.png", dpi=150, bbox_inches="tight")
-    plt.show()
+    plt.close()
