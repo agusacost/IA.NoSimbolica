@@ -64,8 +64,8 @@ def main():
 
         tm = result["train_metrics"]
         vm = result["val_metrics"]
-        print(f"      Train  → Acc={tm['accuracy']:.4f}  F1={tm['f1_score']:.4f}  Tiempo={tm['train_time_s']:.2f}s")
-        print(f"      Val    → Acc={vm['accuracy']:.4f}  F1={vm['f1_score']:.4f}  Prec={vm['precision']:.4f}  Rec={vm['recall']:.4f}")
+        print(f"      Train  > Acc={tm['accuracy']:.4f}  F1={tm['f1_score']:.4f}  Tiempo={tm['train_time_s']:.2f}s")
+        print(f"      Val    > Acc={vm['accuracy']:.4f}  F1={vm['f1_score']:.4f}  Prec={vm['precision']:.4f}  Rec={vm['recall']:.4f}")
 
     # --- 4. Evaluación en Test del mejor modelo ---
     print("\n" + "=" * 60)
@@ -80,7 +80,7 @@ def main():
     y_pred_test = best_model.predict(X_test)
     test_metrics = compute_metrics(y_test, y_pred_test, time.time() - t0)
     print(f"  Mejor modelo: {best_result['name']}")
-    print(f"  Test → Acc={test_metrics['accuracy']:.4f}  F1={test_metrics['f1_score']:.4f}  Prec={test_metrics['precision']:.4f}  Rec={test_metrics['recall']:.4f}")
+    print(f"  Test > Acc={test_metrics['accuracy']:.4f}  F1={test_metrics['f1_score']:.4f}  Prec={test_metrics['precision']:.4f}  Rec={test_metrics['recall']:.4f}")
 
     # --- 5. Tabla resumen ---
     print("\n" + "=" * 60)
