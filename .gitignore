@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Pytest / testing cache
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Superpowers / internal tooling
+docs/superpowers/
+
+# Output files (keep .gitkeep, ignore generated content)
+outputs/*.png
+outputs/*.csv
+outputs/*.jpg
