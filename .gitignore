@@ -38,6 +38,5 @@ Thumbs.db
 docs/superpowers/
 
 # Output files (keep .gitkeep, ignore generated content)
-outputs/*.png
 outputs/*.csv
 outputs/*.jpg
