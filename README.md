@@ -105,3 +105,11 @@ Los resultados se imprimen en consola y los gráficos se guardan en `outputs/`.
 ```bash
 pytest tests/
 ```
+
+
+
+### Infografia
+<img width="2752" height="1536" alt="infografia" src="https://github.com/user-attachments/assets/d861ebdd-ec6c-413a-b610-c51eab1d05e1" />
+
+
+
